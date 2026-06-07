@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>proTeen — Kashmir Walnut · Brain & Heart</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="proTeen is a clean-label protein brand featuring wild-harvested Kashmir walnuts, roasted millets, organic jaggery, and pure cocoa. Whole food nutrition for brain & heart with zero isolates, refined sugar, or preservatives.">
+  <meta name="keywords" content="protein bar, clean label, kashmir walnuts, omega-3, healthy snacks, whole foods, jaggery, millets, brain food, heart health">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="proTeen — Kashmir Walnut · Brain & Heart">
+  <meta property="og:description" content="Pristine Kashmir. Clean Nutrition. Whole food protein bars made with wild-harvested walnuts, organic jaggery, and ancient millets.">
+  <meta property="og:image" content="./assets/kashmir_hero.png">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- EmailJS Integration SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <span>🌾 Wild-Harvested Kashmiri Walnuts • Free Shipping on Orders Over ₹250 • 15% Off Subscriptions</span>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="#" class="logo" id="logo-link">
+        pro<em class="brand-accent">Teen</em>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#shop" class="nav-link">Shop</a>
+        <a href="#formula" class="nav-link">The Formula</a>
+        <a href="#brain-heart" class="nav-link">Brain & Heart</a>
+        <a href="#traceability" class="nav-link">Trace Origin</a>
+        <a href="#brewd" class="nav-link">Brew'd Products</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-toggle-btn" id="cart-toggle" aria-label="Open shopping cart">
+          <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count-badge" id="cart-badge">0</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="tagline sec-label">Kashmir Walnuts • Ancient Millets • Clean Label</div>
+          <h1 class="hero-title">Real food from Kashmir.<br><em class="italic-text">Nothing chemical.</em></h1>
+          <p class="hero-description">
+            We wanted a clean protein bar that didn't taste like chalk or chemical whey. So we made one using wild-harvested walnuts from Gurez, roasted millets, unrefined jaggery, and dark cocoa. No soy lecithin, no sugar alcohols, no isolates. Just real food.
+          </p>
+          <div class="hero-benefits-list">
+            <div class="benefit-item">
+              <span class="benefit-icon">🧠</span>
+              <div class="benefit-text"><strong>Omega-3 ALA (4.72g)</strong> from crushed walnuts to support brain health</div>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">❤️</span>
+              <div class="benefit-text"><strong>Plant Protein (11.2g)</strong> from whole food ingredients to support heart health</div>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a href="#shop" class="btn btn-primary">Order from Next Batch</a>
+            <a href="#formula" class="btn btn-secondary">See What's Inside</a>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="visual-wrapper">
+            <div class="mountain-bg"></div>
+            <!-- Kashmir Hero Product Spread Visual -->
+            <img src="./assets/kashmir_hero.png" alt="proTeen Walnut Protein Products Spread" class="hero-story-img" id="hero-banner-main">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Radical Transparency Section (RXBAR Style - Updated to Revised Formulas) -->
+    <section class="formula-section" id="formula">
+      <div class="section-container">
+        <div class="sec-label mb-4">The Formula</div>
+        <h2 class="section-title text-center">Radical Transparency.<br><em class="italic-text">No Bad Stuff.</em></h2>
+        <p class="section-subtitle text-center mx-auto" style="margin-bottom: 30px;">We list every single ingredient on the front of our pack. Here is exactly what you eat, showing our top four ingredients by weight. Nothing hidden, no proprietary protein blends.</p>
+        
+        <div class="formula-toggle-tabs">
+          <button class="formula-tab-btn active" data-formula="original">proTeen Original (85g)</button>
+          <button class="formula-tab-btn" data-formula="cocoa">proTeen Cocoa (45g)</button>
+          <button class="formula-tab-btn" data-formula="brewd">BREW'D Paste (30g)</button>
+          <button class="formula-tab-btn" data-formula="stroopwafel">Brew'd Stroopwafel (180g)</button>
+        </div>
+
+        <div class="formula-card" id="formula-card-display">
+          <!-- Dynamically populated by JS based on selected formula, showing top 4 ingredients -->
+          <div class="formula-display-grid">
+            <div class="formula-ingredients-list">
+              <div class="ingredient-block-item" style="--bg-color: #3d5238; --text-color: #ffffff;">
+                <span class="pct">61.2%</span>
+                <span class="name">Kashmir Kagzi Walnut</span>
+                <span class="sub">Hero fat & protein source, wild-harvested in Gurez Valley (52g)</span>
+              </div>
+              <div class="ingredient-block-item" style="--bg-color: #b87840; --text-color: #ffffff;">
+                <span class="pct">14.1%</span>
+                <span class="name">Organic Jaggery</span>
+                <span class="sub">Boiled sugarcane juice retaining natural iron and calcium (12g)</span>
+              </div>
+              <div class="ingredient-block-item" style="--bg-color: #ede9df; --text-color: #1a1814;">
+                <span class="pct">11.8%</span>
+                <span class="name">Puffed Foxtail Millet</span>
+                <span class="sub">Ancient grain puff providing protein boost & light texture (10g)</span>
+              </div>
+              <div class="ingredient-block-item" style="--bg-color: #8a6820; --text-color: #ffffff;">
+                <span class="pct">5.9%</span>
+                <span class="name">Ground Chia Seeds</span>
+                <span class="sub">Amplifying Omega-3 ALA content and fiber binding (5g)</span>
+              </div>
+            </div>
+            
+            <div class="formula-product-showcase">
+              <img src="./assets/flatlay_green.jpg" alt="proTeen Original Flatlay Wrapper" class="formula-image active-image">
+            </div>
+          </div>
+        </div>
+
+        <!-- Food Science Accordion Protocol -->
+        <div class="science-accordion-container">
+          <button class="accordion-header" id="tech-secrets-btn">
+            <span>🔬 Food Technologist secrets: Why our bar tastes better</span>
+            <span class="accordion-arrow">▼</span>
+          </button>
+          <div class="accordion-content" id="tech-secrets-content">
+            <div class="accordion-inner">
+              <div class="protocol-grid">
+                <div class="protocol-block">
+                  <h5>1. Removing the Earthy Note</h5>
+                  <p>Raw millets contain bitter tannins and phytic acid. We soak them in a warm <strong>1:3 water ratio</strong> for 8 hours with Himalayan salt, rinse 3 times, and dry before sand-puffing at <strong>180°C</strong>. This turns grassy grain into a sweet, toasted walnut enhancer.</p>
+                </div>
+                <div class="protocol-block">
+                  <h5>2. Sub-Threshold Salt (0.3g)</h5>
+                  <p>Adding exactly 0.3% Himalayan salt acts as a flavor multiplier. At this level, it does not taste salty; it actively suppresses the bitterness of raw walnuts and enhances jaggery's sweet perception by <strong>15-20%</strong>.</p>
+                </div>
+                <div class="protocol-block">
+                  <h5>3. Volatile Aroma Boosting</h5>
+                  <p>Walnut terpenes are fat-soluble. We drizzle 1.5g of cold-pressed walnut oil directly over the dry ingredients. This "carries" the fresh aroma directly to your nose upon opening the nitrogen-flushed wrapper.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brain & Heart / Walnut Shape Highlight Section (Updated with Walnut -> Brain SVG hover) -->
+    <section class="brain-heart-section" id="brain-heart">
+      <div class="section-container">
+        <div class="brain-heart-grid">
+          
+          <div class="brain-heart-visual">
+            <div class="kernel-container" id="kernel-hover-box">
+              <div class="kernel-media-wrapper">
+                <!-- Base Walnut Kernel Photograph -->
+                <img src="./assets/walnut_kernel.png" alt="Kashmir Kagzi Walnut Kernel" class="kernel-img-base">
+                
+                <!-- SVG Overlay containing Brain Sketch & Millet Highlights -->
+                <svg viewBox="0 0 200 200" class="kernel-svg-overlay">
+                  <!-- Human Brain Sketch Group (Fades in on hover) -->
+                  <g class="brain-sketch-group">
+                    <!-- Cerebral Cortex outer contour -->
+                    <path d="M100 25 C65 25, 42 42, 37 72 C32 97, 47 112, 57 122 C62 127, 65 139, 82 142 C87 143, 92 149, 97 149 C103 149, 108 143, 113 142 C130 139, 133 127, 138 122 C148 112, 163 97, 158 72 C153 42, 130 25, 100 25 Z" fill="none" stroke="#3d5238" stroke-width="2.5" class="brain-pulse-line"/>
+                    <!-- Central fissure line -->
+                    <path d="M100 25 L100 145" stroke="#3d5238" stroke-width="1.5" stroke-dasharray="2 2"/>
+                    <!-- Internal synaptic lobes and folds (minimal line art) -->
+                    <path d="M57 57 C52 67, 67 72, 72 77 C77 82, 82 77, 92 72 M138 57 C143 67, 128 72, 123 77 C118 82, 113 77, 103 72" stroke="#b87840" stroke-width="1.5" fill="none"/>
+                    <path d="M47 87 Q67 92 77 87 T92 102 M148 87 Q128 92 118 87 T103 102" stroke="#b87840" stroke-width="1.5" fill="none"/>
+                    <path d="M67 117 C77 112, 82 122, 92 122 M128 117 C118 112, 113 122, 103 122" stroke="#3d5238" stroke-width="1.5" fill="none"/>
+                    <!-- Symmetrical glowing nodes for highlight -->
+                    <circle cx="72" cy="77" r="3" fill="#3d5238" class="synapse-dot"/>
+                    <circle cx="123" cy="77" r="3" fill="#3d5238" class="synapse-dot"/>
+                    <circle cx="77" cy="107" r="3" fill="#b87840" class="synapse-dot"/>
+                    <circle cx="118" cy="107" r="3" fill="#b87840" class="synapse-dot"/>
+                  </g>
+                  
+                  <!-- Millet Highlight Particles Group (Draws in on hover) -->
+                  <g class="millet-sketch-group">
+                    <!-- Little glowing millet seeds nested in the folds -->
+                    <ellipse cx="65" cy="50" rx="2" ry="3.5" fill="#8a6820" transform="rotate(30 65 50)" class="millet-seed-glow"/>
+                    <ellipse cx="130" cy="50" rx="2" ry="3.5" fill="#8a6820" transform="rotate(-30 130 50)" class="millet-seed-glow"/>
+                    <ellipse cx="48" cy="75" rx="2" ry="3.5" fill="#b87840" transform="rotate(45 48 75)" class="millet-seed-glow"/>
+                    <ellipse cx="147" cy="75" rx="2" ry="3.5" fill="#b87840" transform="rotate(-45 147 75)" class="millet-seed-glow"/>
+                    <ellipse cx="85" cy="115" rx="2" ry="3.5" fill="#8a6820" transform="rotate(15 85 115)" class="millet-seed-glow"/>
+                    <ellipse cx="110" cy="115" rx="2" ry="3.5" fill="#8a6820" transform="rotate(-15 110 115)" class="millet-seed-glow"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="kernel-label text-center">
+                <h4 class="font-display" id="kernel-state-title">Kashmir Kagzi Walnut</h4>
+                <p id="kernel-state-desc">Hover to reveal the brain-shaped blueprint</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="brain-heart-text">
+            <div class="sec-label mb-3">Designed by Nature</div>
+            <h2 class="section-title">Why do walnuts look like human brains?</h2>
+            <p class="nutri-desc">
+              It is a strange coincidence that a cracked walnut kernel looks exactly like the human brain. But the chemistry matches the shape: walnuts are the only nuts rich in alpha-linolenic acid (plant-based Omega-3).
+            </p>
+            <p class="nutri-desc font-light">
+              Your body cannot make these essential fats—you have to eat them. We combine wild-harvested walnuts with roasted millets and ground chia to make a dense, slow-burning food that keeps your mind clear and your heart healthy.
+            </p>
+            
+            <!-- Highlighted Millet Card -->
+            <div class="millet-highlight-card">
+              <div class="millet-icon">🌾</div>
+              <div class="millet-info">
+                <h5>Roasted Millets for Texture</h5>
+                <p>We toast foxtail and barnyard millets and fold them into the walnut paste. It gives the bar a light, crispy crunch while adding natural fiber and plant protein. No chalky protein powders, no bloated stomach.</p>
+              </div>
+            </div>
+
+            <div class="brain-heart-highlights">
+              <div class="bh-stat-card">
+                <span class="bh-num text-gold">4.72g</span>
+                <span class="bh-lbl">Omega-3 ALA per Bar</span>
+              </div>
+              <div class="bh-stat-card">
+                <span class="bh-num text-warm">11.2g</span>
+                <span class="bh-lbl">Plant Protein (SKU1)</span>
+              </div>
+              <div class="bh-stat-card">
+                <span class="bh-num text-sage">7.4g</span>
+                <span class="bh-lbl">Dietary Fibre</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DTC Shop Section -->
+    <section class="shop-section" id="shop">
+      <div class="section-container">
+        <div class="sec-label mb-4">Fresh Batch</div>
+        <h2 class="section-title">Shop proTeen & Brew'd</h2>
+        <p class="section-subtitle">Straight from Kashmiri orchards to your doorstep. Nutrient-dense whole foods designed for cognitive performance and cardiac longevity.</p>
+        
+        <div class="shop-grid">
+          
+          <!-- Product 1: proTeen Original Bar (85g) -->
+          <div class="product-card" data-product-id="proteen-original">
+            <div class="product-image-container">
+              <img src="./assets/bar_green.png" alt="proTeen Original Walnut Bar" class="product-card-img main-img">
+              <img src="./assets/flatlay_green.jpg" alt="proTeen Original Wrapper Spread" class="product-card-img hover-img">
+              <span class="badge badge-accent">85g Bar • Puffed Millet</span>
+            </div>
+            <div class="product-card-content">
+              <h3 class="product-title">proTeen Original Kashmir Walnut Bar</h3>
+              <p class="product-subtitle">Kashmir walnut, foxtail millet, and chia.</p>
+              <div class="product-macros">
+                <span class="macro-tag">🧠 4.7g Omega-3</span>
+                <span class="macro-tag">💪 11.2g Protein</span>
+                <span class="macro-tag">🌱 7.4g Fibre</span>
+              </div>
+              
+              <!-- Purchase Selector Options -->
+              <div class="purchase-type-selector">
+                <label class="purchase-option active">
+                  <input type="radio" name="purchase-type-original" value="onetime" checked>
+                  <div class="option-details">
+                    <span class="option-title">Single item purchase</span>
+                    <span class="option-price">₹100 <small class="text-muted">(₹100/bar)</small></span>
+                  </div>
+                </label>
+                <label class="purchase-option">
+                  <input type="radio" name="purchase-type-original" value="subscribe">
+                  <div class="option-details">
+                    <span class="option-title">Subscribe & Save 15% 🌾</span>
+                    <span class="option-price">₹85 <small class="text-gold">(₹85/bar)</small></span>
+                  </div>
+                  <span class="save-tag">SAVE 15%</span>
+                </label>
+              </div>
+              
+              <button class="btn btn-block btn-add-to-cart" data-id="proteen-original" data-name="proTeen Original Bar" data-price-onetime="100" data-price-subscribe="85" data-img="./assets/bar_green.png">
+                Add to Basket
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2: proTeen Dark Cocoa Bar (45g) -->
+          <div class="product-card" data-product-id="proteen-cocoa">
+            <div class="product-image-container">
+              <img src="./assets/bar_brown.png" alt="proTeen Dark Cocoa Bar" class="product-card-img main-img">
+              <img src="./assets/flatlay_brown.jpg" alt="BrainNuts Wrapper Spread" class="product-card-img hover-img">
+              <span class="badge badge-accent">45g Bar • Night Mode</span>
+            </div>
+            <div class="product-card-content">
+              <h3 class="product-title">proTeen Dark Cocoa Walnut Bar</h3>
+              <p class="product-subtitle">Indulgence meets cocoa-walnut combo.</p>
+              <div class="product-macros">
+                <span class="macro-tag">🍫 Dark Cocoa 22%</span>
+                <span class="macro-tag">💪 10.4g Protein</span>
+                <span class="macro-tag">🧠 2.6g Omega-3</span>
+              </div>
+              
+              <!-- Purchase Selector Options -->
+              <div class="purchase-type-selector">
+                <label class="purchase-option active">
+                  <input type="radio" name="purchase-type-cocoa" value="onetime" checked>
+                  <div class="option-details">
+                    <span class="option-title">Single item purchase</span>
+                    <span class="option-price">₹110 <small class="text-muted">(₹110/bar)</small></span>
+                  </div>
+                </label>
+                <label class="purchase-option">
+                  <input type="radio" name="purchase-type-cocoa" value="subscribe">
+                  <div class="option-details">
+                    <span class="option-title">Subscribe & Save 15% 🌾</span>
+                    <span class="option-price">₹93.50 <small class="text-gold">(₹93.50/bar)</small></span>
+                  </div>
+                  <span class="save-tag">SAVE 15%</span>
+                </label>
+              </div>
+              
+              <button class="btn btn-block btn-add-to-cart" data-id="proteen-cocoa" data-name="proTeen Dark Cocoa Bar" data-price-onetime="110" data-price-subscribe="93.5" data-img="./assets/bar_brown.png">
+                Add to Basket
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3: BREW'D Squeeze morning paste -->
+          <div class="product-card" data-product-id="brewd-paste">
+            <div class="product-image-container">
+              <img src="./assets/brewd_paste.jpg" alt="BREW'D Squeeze & Go morning paste" class="product-card-img main-img" style="object-fit: cover;">
+              <span class="badge badge-accent">Squeeze & Go Pouch</span>
+            </div>
+            <div class="product-card-content">
+              <h3 class="product-title">BREW'D Walnut Morning Paste</h3>
+              <p class="product-subtitle">Walnut, Chia, Honey & Cocoa paste</p>
+              <div class="product-macros">
+                <span class="macro-tag">☀️ Light & Dark Sachet</span>
+                <span class="macro-tag">🧠 2.7g Omega-3</span>
+                <span class="macro-tag">🌱 Chia & Dates</span>
+              </div>
+              
+              <!-- Purchase Selector Options -->
+              <div class="purchase-type-selector">
+                <label class="purchase-option active">
+                  <input type="radio" name="purchase-type-brewd" value="onetime" checked>
+                  <div class="option-details">
+                    <span class="option-title">Single item purchase</span>
+                    <span class="option-price">₹100 <small class="text-muted">(₹100/pouch)</small></span>
+                  </div>
+                </label>
+                <label class="purchase-option">
+                  <input type="radio" name="purchase-type-brewd" value="subscribe">
+                  <div class="option-details">
+                    <span class="option-title">Subscribe & Save 15% 🌾</span>
+                    <span class="option-price">₹85 <small class="text-gold">(₹85/pouch)</small></span>
+                  </div>
+                  <span class="save-tag">SAVE 15%</span>
+                </label>
+              </div>
+              
+              <button class="btn btn-block btn-add-to-cart" data-id="brewd-paste" data-name="BREW'D Walnut Morning Paste" data-price-onetime="100" data-price-subscribe="85" data-img="./assets/brewd_paste.jpg">
+                Add to Basket
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 4: Brew'd Stroopwafel Walnut Fills -->
+          <div class="product-card" data-product-id="brewd-stroopwafel">
+            <div class="product-image-container">
+              <img src="./assets/stroopwafel.jpg" alt="Brew'd Stroopwafel Walnut Fills" class="product-card-img main-img" style="object-fit: cover;">
+              <span class="badge badge-accent">Original • Filled</span>
+            </div>
+            <div class="product-card-content">
+              <h3 class="product-title">Brew'd Stroopwafel Walnut Fills</h3>
+              <p class="product-subtitle">Kashmir Walnut & Dark Cocoa fills cookie</p>
+              <div class="product-macros">
+                <span class="macro-tag">🧇 Stroopwafel waffle</span>
+                <span class="macro-tag">🍫 Dark Cocoa fills</span>
+                <span class="macro-tag">⭐ BioE3 Labs certified</span>
+              </div>
+              
+              <!-- Purchase Selector Options -->
+              <div class="purchase-type-selector">
+                <label class="purchase-option active">
+                  <input type="radio" name="purchase-type-stroopwafel" value="onetime" checked>
+                  <div class="option-details">
+                    <span class="option-title">Single item purchase</span>
+                    <span class="option-price">₹120 <small class="text-muted">(₹120/cookie)</small></span>
+                  </div>
+                </label>
+                <label class="purchase-option">
+                  <input type="radio" name="purchase-type-stroopwafel" value="subscribe">
+                  <div class="option-details">
+                    <span class="option-title">Subscribe & Save 15% 🌾</span>
+                    <span class="option-price">₹102 <small class="text-gold">(₹102/cookie)</small></span>
+                  </div>
+                  <span class="save-tag">SAVE 15%</span>
+                </label>
+              </div>
+              
+              <button class="btn btn-block btn-add-to-cart" data-id="brewd-stroopwafel" data-name="Brew'd Stroopwafel Walnut Fills" data-price-onetime="120" data-price-subscribe="102" data-img="./assets/stroopwafel.jpg">
+                Add to Basket
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Walnut: Science Board Section -->
+    <section class="why-walnut-section" id="why-walnut">
+      <div class="why-walnut-container">
+        <div class="section-header-dark">
+          <div class="sec-label mb-4" style="color: #e0c097; border-color: #e0c097;">Why Walnut</div>
+          <h2 class="section-title-dark">No Isolates. <em class="text-gold italic-text">Just Whole Foods.</em></h2>
+          <p class="section-desc-dark">Most brands use cheap peanuts, soy flakes, or highly processed whey powder as base fillers. We use Kashmiri walnuts because they are clean and nutritionally superior. Here is why.</p>
+        </div>
+
+        <div class="comparison-grid">
+          
+          <div class="science-card">
+            <span class="science-num">01 —</span>
+            <span class="science-icon">🧠</span>
+            <h3 class="science-title">Rich in Omega-3 ALA</h3>
+            <p class="science-body">
+              A single proTeen bar contains 4.72g of plant-based Omega-3. Most other energy bars have virtually zero, relying instead on palm oil or hydrogenated fats for texture.
+            </p>
+          </div>
+          
+          <div class="science-card">
+            <span class="science-num">02 —</span>
+            <span class="science-icon">❤️</span>
+            <h3 class="science-title">Heart Health Support</h3>
+            <p class="science-body">
+              The FDA recognizes that eating 1.5 ounces of walnuts per day as part of a low-saturated-fat diet may reduce the risk of heart disease. Walnuts also have more antioxidants than almonds or peanuts.
+            </p>
+          </div>
+          
+          <div class="science-card">
+            <span class="science-num">03 —</span>
+            <span class="science-icon">🌾</span>
+            <h3 class="science-title">Easy Digestion</h3>
+            <p class="science-body">
+              We don't use protein isolates. Isolates are processed using high heat and chemical solvents, which often cause bloating. We keep the walnuts, millets, and seeds intact so your stomach digests them naturally.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="science-sources">
+          <p>Scientific References: Harvard T.H. Chan School of Public Health • NIH National Library of Medicine • FDA Qualified Health Claim for Walnuts (2004)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Farm to Bar / Scan & Discover Kashmir Section -->
+    <section class="traceability-section" id="traceability">
+      <div class="section-container">
+        <div class="trace-grid">
+          
+          <div class="trace-visual">
+            <div class="qr-scanner-card">
+              <div class="qr-container">
+                <!-- clickable QR code leading to walnut documentary film -->
+                <a href="https://www.youtube.com/watch?v=F3qZrr3eL_g" target="_blank" class="qr-code-link" title="Click to play Kashmir Walnut story film">
+                  <div class="qr-box">
+                    <div class="qr-line"></div>
+                    <img src="./assets/qr_code.png" alt="Scan QR code for Kashmir Video" class="qr-code-png">
+                  </div>
+                </a>
+                <span class="qr-tag">SCAN OR CLICK ME</span>
+              </div>
+              <div class="orchard-info-box">
+                <div class="info-row">
+                  <span class="info-val">100+ Yrs</span>
+                  <span class="info-lbl">Old Kashmiri Orchards</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-val">₹329/kg</span>
+                  <span class="info-lbl">Farmer Cost Advantage</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-val">0</span>
+                  <span class="info-lbl">Middlemen</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-val">GI</span>
+                  <span class="info-lbl">Certified Origin</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Simulated Video Popup Trigger -->
+            <button class="btn-play-story" id="play-story-btn">
+              <span class="play-icon">▶</span>
+              <span class="play-label">Play 3-Min Story Film</span>
+            </button>
+          </div>
+
+          <div class="trace-content">
+            <div class="sec-label mb-3">Farm to Bar</div>
+            <h2 class="trace-title">Direct from Gurez Valley.<br><em class="text-gold italic-text">No Middlemen.</em></h2>
+            <p class="trace-desc">
+              We source our Kagzi walnuts directly from cooperative farmers in the Gurez and Wular valleys of Kashmir. Scan the QR code on your bar to see the orchards and meet the family who harvested your batch. By skipping middlemen, we return ₹329 more per kg directly to the growers.
+            </p>
+            
+            <!-- Kashmiri Walnut Lady Harvest image card -->
+            <div class="kashmir-lady-card">
+              <img src="./assets/walnut_harvest.png" alt="Kashmiri lady sorting walnuts during harvest season" class="lady-harvest-img">
+              <div class="lady-caption">Organic Sun-Drying near Gurez cooperative orchards.</div>
+            </div>
+            
+            <p class="trace-desc font-light">
+              When you buy a bar, you are directly supporting small family orchards. There are no corporate brokers or layers of wholesale distributors. We buy from the farmers, pack it near the source, and ship it to you.
+            </p>
+            <p class="trace-cta-text">
+              <strong>Trace your bag's journey. Know your farmer. Know your food.</strong>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Faux Video Player Modal -->
+    <div class="video-modal-overlay" id="video-modal">
+      <div class="video-modal-content">
+        <button class="video-modal-close" id="video-close">&times;</button>
+        <div class="video-container">
+          <iframe id="video-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/F3qZrr3eL_g?enablejsapi=1" title="Kashmir Walnut Harvest Film" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Nutrition Label Panel -->
+    <section class="nutrition-section">
+      <div class="section-container">
+        <h2 class="section-title text-center">Clean Ingredients.<br><em class="italic-text">Full Disclosures.</em></h2>
+        
+        <div class="nutrition-grid">
+          
+          <div class="nutrition-label-container">
+            <div class="nutrition-label">
+              <h3 class="label-header">Nutrition Information</h3>
+              <div class="label-serving">Serving Size: 1 Bar (85g) | Servings Per Pack: 1</div>
+              <div class="divider-thick"></div>
+              
+              <div class="nutrient-row font-bold">
+                <span>Energy</span>
+                <span>448 kcal</span>
+              </div>
+              <div class="divider-medium"></div>
+              
+              <div class="nutrient-row font-bold">
+                <span>Protein</span>
+                <span>11.2 g</span>
+              </div>
+              <div class="divider-thin"></div>
+              
+              <div class="nutrient-row font-bold">
+                <span>Total Carbohydrate</span>
+                <span>14.2 g</span>
+              </div>
+              <div class="nutrient-subrow">
+                <span>Total Sugars (From Jaggery)</span>
+                <span>12 g</span>
+              </div>
+              <div class="divider-thin"></div>
+              
+              <div class="nutrient-row font-bold">
+                <span>Total Fat</span>
+                <span>28 g</span>
+              </div>
+              <div class="nutrient-subrow">
+                <span>Omega-3 (ALA)</span>
+                <span>4.72 g</span>
+              </div>
+              <div class="divider-thin"></div>
+              
+              <div class="nutrient-row">
+                <span>Dietary Fiber</span>
+                <span>7.4 g</span>
+              </div>
+              <div class="divider-thin"></div>
+              
+              <div class="nutrient-row">
+                <span>Calcium</span>
+                <span>42 mg</span>
+              </div>
+              <div class="divider-thin"></div>
+              
+              <div class="nutrient-row">
+                <span>Iron</span>
+                <span>3.8 mg</span>
+              </div>
+              <div class="divider-thick"></div>
+              
+              <div class="label-ingredients">
+                <strong>INGREDIENTS:</strong> Kashmiri Kagzi Walnuts (61.2%), Organic Unrefined Jaggery (14.1%), Puffed Foxtail Millet (11.8%), Ground Chia Seeds (5.9%), Puffed Barnyard Millet (4.7%), Cold-Pressed Walnut Oil (1.8%), Himalayan Pink Salt (0.4%).
+              </div>
+              <div class="label-notes">
+                *Values are based on ICMR 2020 guidelines for the 85g Original bar. 3x WHO Omega-3 target.
+              </div>
+            </div>
+          </div>
+
+          <div class="nutrition-details-content">
+            <div class="sec-label mb-3">Guaranteed Clean</div>
+            <h3 class="nutri-title">What goes in, stays in.</h3>
+            <p class="nutri-desc">Unlike conventional energy bars that sneak in seed oils, corn syrups, soy lecithin emulsifiers, or isolates, we have absolutely nothing to hide. We formulate with strict whole food principles.</p>
+            
+            <ul class="cert-list">
+              <li>
+                <span class="cert-check">✓</span>
+                <div>
+                  <strong>No Added Preservatives:</strong> Raw walnut oils are stabilized naturally by cold-packaging, preventing oxidation without chemicals.
+                </div>
+              </li>
+              <li>
+                <span class="cert-check">✓</span>
+                <div>
+                  <strong>No Refined Sugars:</strong> We use unrefined jaggery, boiled down from pure sugar cane, retaining all trace minerals and iron.
+                </div>
+              </li>
+              <li>
+                <span class="cert-check">✓</span>
+                <div>
+                  <strong>No Soy or Dairy Isolates:</strong> No bloating, no chalky aftertaste, just the clean texture of crushed nuts and puffed grain.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Banner Image section (zw) -->
+    <section class="whatsapp-banner-section" id="brewd">
+      <div class="section-container text-center">
+        <div class="banner-box">
+          <div class="banner-text-overlay">
+            <h3 class="banner-title">Brew'd Stroopwafel Walnut Fills</h3>
+            <p class="banner-subtitle">"with Kashmir Walnut & Dark Cocoa fills • 4 Pieces • 180g"</p>
+          </div>
+          <img src="./assets/stroopwafel.jpg" alt="Brew'd Stroopwafel Walnut Fills with Kashmir Walnut" class="whatsapp-banner-img">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Sliding Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h3>Your Basket</h3>
+      <button class="cart-close-btn" id="cart-close" aria-label="Close Cart">&times;</button>
+    </div>
+    
+    <div class="cart-items-container" id="cart-items-list">
+      <!-- Empty state initially -->
+      <div class="cart-empty-state">
+        <span class="empty-icon">🌾</span>
+        <p>Your basket is currently empty.</p>
+        <a href="#shop" class="btn btn-primary btn-sm close-cart-nav">Shop Fresh Batch</a>
+      </div>
+    </div>
+    
+    <div class="cart-drawer-footer" id="cart-footer">
+      <div class="shipping-meter">
+        <span class="shipping-text" id="shipping-progress-text">Spend ₹100.00 more for Free Shipping!</span>
+        <div class="progress-bar-cart"><div class="progress-fill-cart" id="shipping-progress-bar" style="width: 33%"></div></div>
+      </div>
+      
+      <div class="cart-totals">
+        <div class="totals-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">₹0.00</span>
+        </div>
+        <div class="totals-row discount-row" id="cart-discount-row" style="display: none;">
+          <span>Subscription discount (15%)</span>
+          <span id="cart-discount">-₹0.00</span>
+        </div>
+        <div class="totals-row shipping-row">
+          <span>Shipping</span>
+          <span id="cart-shipping">Calculated next</span>
+        </div>
+        <div class="totals-row total-row font-bold">
+          <span>Total</span>
+          <span id="cart-total">₹0.00</span>
+        </div>
+      </div>
+      
+      <button class="btn btn-primary btn-block" id="btn-checkout">
+        Pre-Order / Notify Me
+      </button>
+    </div>
+  </div>
+
+  <!-- Pre-Launch Capture Form Modal -->
+  <div class="checkout-modal-overlay" id="checkout-modal">
+    <div class="checkout-modal-card prelaunch-card">
+      <button class="prelaunch-close-btn" id="prelaunch-close-btn">&times;</button>
+      <span class="checkout-success-icon">🏔️</span>
+      <h3>We're Launching Soon!</h3>
+      <p class="prelaunch-subtitle">proTeen is preparing its first batch directly from Kashmir's wild-harvested walnut cooperatives. Join the waitlist now to receive a <strong>20% launch day discount</strong>!</p>
+      
+      <form class="prelaunch-form" id="prelaunch-signup-form">
+        <!-- Optional notification details for EmailJS keys -->
+        <input type="hidden" id="emailjs-service-id" value="default_service">
+        <input type="hidden" id="emailjs-template-id" value="template_proteen">
+        <input type="hidden" id="emailjs-public-key" value="user_placeholder">
+
+        <div class="form-group">
+          <label for="lead-name">Name</label>
+          <input type="text" id="lead-name" placeholder="Enter your full name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="lead-contact">Email or Phone Number</label>
+          <input type="text" id="lead-contact" placeholder="Email address or mobile number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lead-region">Your Location (City/State)</label>
+          <input type="text" id="lead-region" placeholder="e.g. Srinagar, Delhi, Mumbai" required>
+          <span class="location-detected-info" id="geo-info-status">Detecting region...</span>
+        </div>
+
+        <!-- Displays cart item summary inside form -->
+        <div class="form-cart-summary">
+          <span>Interested Items:</span>
+          <strong id="form-items-count">0 items</strong>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" id="btn-submit-lead">
+          Join Waitlist & Send Email
+        </button>
+      </form>
+      
+      <!-- Thank you message container -->
+      <div class="prelaunch-thankyou" id="prelaunch-thankyou-msg" style="display: none;">
+        <span class="success-checkmark">✓</span>
+        <h4>Waitlist Confirmed!</h4>
+        <p>Thank you for your interest in clean label nutrition. An email notification has been dispatched to administrators and we will notify you when shipping begins!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Market Geolocation Analytics Panel (Pre-Launch Dev Tools) -->
+  <div class="analytics-toggle-btn" id="analytics-toggle" title="Open Market Analytics">
+    <span>📊 Market Analytics Dashboard</span>
+  </div>
+
+  <div class="analytics-panel" id="analytics-panel">
+    <div class="analytics-header">
+      <h4>Market Research Analytics</h4>
+      <div class="analytics-actions">
+        <button class="btn-clear-data" id="btn-clear-analytics">Clear Data</button>
+        <button class="analytics-close" id="analytics-close-btn">&times;</button>
+      </div>
+    </div>
+    
+    <div class="analytics-body">
+      <!-- Top level numbers -->
+      <div class="stats-row">
+        <div class="stat-box">
+          <span class="stat-val" id="stat-traffic">0</span>
+          <span class="stat-lbl">Total Visits</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-val" id="stat-leads">0</span>
+          <span class="stat-lbl">Waitlist Leads</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-val" id="stat-conversion">0%</span>
+          <span class="stat-lbl">Conversion Rate</span>
+        </div>
+      </div>
+
+      <!-- Grid layout for graphs and lists -->
+      <div class="analytics-grid">
+        
+        <!-- Region Interest -->
+        <div class="analytic-card">
+          <h5>Top Regions Interest</h5>
+          <div class="chart-container" id="region-chart-list">
+            <p class="chart-empty">Waiting for lead location entries...</p>
+          </div>
+        </div>
+
+        <!-- Product Interest -->
+        <div class="analytic-card">
+          <h5>Product Cart Interest</h5>
+          <div class="chart-container" id="product-chart-list">
+            <!-- Simple bars will go here -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Leads Details Table -->
+      <div class="analytic-card full-width">
+        <h5>Detailed Captured Leads</h5>
+        <div class="table-wrapper">
+          <table class="leads-table" id="leads-table-elem">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Region</th>
+                <th>IP/Browser Info</th>
+                <th>Cart Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Populated by JS -->
+              <tr>
+                <td colspan="6" class="text-center text-muted">No leads captured yet. Add items and complete the pre-order waitlist to log a lead!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-top">
+      <div class="footer-container text-center">
+        <p class="footer-moto">"Made with Kashmiri walnuts - for your brain & heart."</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-container footer-bottom-flex">
+        <div class="footer-logo">
+          pro<span class="brand-accent-footer">Teen</span>
+        </div>
+        <ul class="footer-nav">
+          <li><a href="#" class="footer-link">Instagram</a></li>
+          <li><a href="#" class="footer-link">FSSAI Info</a></li>
+          <li><a href="#" class="footer-link">Contact</a></li>
+          <li><a href="#" class="footer-link">Privacy Policy</a></li>
+        </ul>
+        
+        <!-- Live Visitor Geolocation Bottom Ticker -->
+        <div class="live-visitor-ticker">
+          <span class="ticker-pulse"></span>
+          <span class="ticker-text" id="live-visitor-ticker-text">Loading live visitor geolocations...</span>
+        </div>
+
+        <div class="footer-copy">
+          &copy; <span id="current-year">2026</span> proTeen • Kashmir Walnut Co.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/app.js"></script>
+</body>
+</html>
